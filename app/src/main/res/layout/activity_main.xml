@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sifatbinzaman.converter.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/chkInch2Foot"
+        android:layout_alignRight="@+id/chkInch2Foot"
+        android:layout_below="@+id/chkInch2Foot"
+        android:layout_marginTop="32dp"
+        android:text="CONVERT" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Enter a Number to Convert:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+    <CheckBox
+        android:id="@+id/chkMeter2Inch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_below="@+id/input"
+        android:textSize="16dp"
+        android:text="meter to inch" />
+
+    <CheckBox
+        android:id="@+id/chkKg2Pound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/chkCelcius2Kelvin"
+        android:layout_toRightOf="@+id/chkCelcius2Kelvin"
+        android:text="kg to pound"
+        android:textSize="16dp" />
+
+    <CheckBox
+        android:id="@+id/chkDollar2Euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkKg2Pound"
+        android:layout_alignStart="@+id/chkKg2Pound"
+        android:layout_below="@+id/chkKg2Pound"
+        android:textSize="16dp"
+        android:layout_marginTop="37dp"
+        android:text="dollar to euro" />
+
+    <CheckBox
+        android:id="@+id/chkCelcius2Kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkDollar2Euro"
+        android:layout_alignBottom="@+id/chkDollar2Euro"
+        android:layout_alignLeft="@+id/chkMeter2Inch"
+        android:textSize="16dp"
+        android:layout_alignStart="@+id/chkMeter2Inch"
+        android:text="Celcius to Kelvin" />
+
+    <CheckBox
+        android:id="@+id/chkInch2Foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkJoule2Calorie"
+        android:layout_alignBottom="@+id/chkJoule2Calorie"
+        android:layout_alignLeft="@+id/chkDollar2Euro"
+        android:layout_alignStart="@+id/chkDollar2Euro"
+        android:textSize="16dp"
+        android:text="inch to foot" />
+
+    <CheckBox
+        android:id="@+id/chkJoule2Calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkCelcius2Kelvin"
+        android:layout_alignStart="@+id/chkCelcius2Kelvin"
+        android:layout_below="@+id/chkCelcius2Kelvin"
+        android:layout_marginTop="34dp"
+        android:textSize="16dp"
+        android:text="Joule to Calorie" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkJoule2Calorie"
+
+        android:layout_alignStart="@+id/chkJoule2Calorie"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="21dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+</RelativeLayout>
